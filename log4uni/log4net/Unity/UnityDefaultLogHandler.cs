@@ -63,6 +63,7 @@ namespace log4net.Unity
 
         }
         
+        [HideInCallstack]
         public void LogFormat(LogType logType, Object context, string format, params object[] args)
         {
             var logger = GetLogger(context);
